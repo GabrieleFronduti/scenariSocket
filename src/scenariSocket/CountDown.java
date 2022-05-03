@@ -28,7 +28,7 @@ public class CountDown extends Thread {
             {
                 System.out.println(i);
                 try {
-                    sleep(2200);
+                    sleep(1000);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(CountDown.class.getName()).log(Level.SEVERE, null, ex);
                 }

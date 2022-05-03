@@ -37,7 +37,8 @@ public class Server {
         try {
             so = ss.accept();
             System.out.println("Connessione stabilita!");
-            
+            CountDown c = new CountDown(10);
+            c.start();
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }

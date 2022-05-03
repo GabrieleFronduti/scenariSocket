@@ -35,7 +35,7 @@ public class Client {
         
         String msg="";
         try {
-            msg = br.readLine();
+            msg = br.readLine(); 
         } catch (IOException ex) {
             System.out.println("Errore nella lettura");
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
