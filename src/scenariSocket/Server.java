@@ -27,6 +27,7 @@ public class Server {
             ss = new ServerSocket(porta);
             System.out.println("Ok sono in ascolto!");
             
+            
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -35,10 +36,12 @@ public class Server {
     
     public void inAscolto(){
         try {
+            while(true){
             so = ss.accept();
             System.out.println("Connessione stabilita!");
             CountDown c = new CountDown(10);
             c.start();
+            }
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
